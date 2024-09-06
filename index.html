@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Education Innovation</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="data:image/png;base64,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" alt="logo" width="100" height="100"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<!--<li><a href="#contactus_section">Contact</a></li>-->
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+				<div class="play">
+					<img src="https://t4.ftcdn.net/jpg/03/14/80/29/360_F_314802929_rT7dk4HmbsocHtLenrn92XXPqG43RBn8.jpg" alt="play"><span><a href="https://www.youtube.com/watch?v=nzV1NmhC7ik" target="_blank">Watch Now</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Subjects on EI</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/jee.html"><img src="images/courses/book.png">JEE Preparation</a></div>
+		<div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">GATE Preparation</a></div>
+		
+		<!--<div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/courses/paper.png">Sample Papers</a></div> -->
+		
+		<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+		</div></center>
+		<div class="cbox">
+		<!--<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer Courses</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Data Structures</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Algorithm</a></div>
+		<div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Projects</a></div>
+		</div>
+	</div>-->
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What do you think about us ?</h2>
+					<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
+		<div class="content">
+			<p>
+				<h3>
+				“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” <p>“Your attitude, not your aptitude, will determine your altitude.”</p> “If you think education is expensive, try ignorance.” <p>“The only person who is educated is the one who has learned how to learn …and change.”</p>
+			     </h3>
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>We're increasing this data every year</p>
+		<div class="smbox">
+		<span><center><div class="data">00</div><div class="det">Enrolled Students</div></center></span>
+		<span><center><div class="data">02</div><div class="det">Total Courses</div></center></span>
+		<span><center><div class="data">00</div><div class="det">Placed Students</div></center></span>
+		<span><center><div class="data">00</div><div class="det">Total Projects</div></center></span>
+		</div>
+	</div>
+
+
+<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="..............."></center>
+				<center><div class="card-title">Rudra Thakkar</div>
+				<div id="detail">
+					<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+					<div class="duty"></div>
+					<a href="............" target="_blank"><button class="btn-">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="............"></center>
+				<center><div class="card-title">Taksh Prajapati</div>
+				<div id="detail">
+					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+					<div class="duty"></div>
+					<a href="............" target="_blank"><button class="btn-akhil">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Computer Courses</p></div></a>
+		<a href="subjects/jee.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Building Concepts for Competitive Exams</p></div></a>
+		<a href="subjects/jee.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers of Various Competitive Exams</p></div></a>
+		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist1.jpg"><p>Heet Patel</p>
+				<h6>Java</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					......................................................................................................................................................................................................................................................................................................................................................................................................                                                                                                                                                                                                                                                        <!--I did Java Fundamenetal course with Rishab Sir. It was a great experience. The brain teasers and assignments, actually the whole lot of content was really good. Some problems were challenging yet interesting. Was explained very well where ever I stuck...-->
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist2.jpg"><p>purva shimpi</p>
+				<h6>C/C++</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">    ......................................................................................................................................................................................................................................................................................................................................................................................................                                                                                                                                                                                                                                                        
+					</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist3.jpg"><p>dhriti maurya</p>
+				<h6>JEE</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					......................................................................................................................................................................................................................................................................................................................................................................................................                                                                                                                                                                                                                                                       <!--LearnEd was an amazing experience for me. I belong to electronics department and had a little experience in coding but I think it has helped me think things through in a much more analytical manner. Coding is important no matter which branch you are in. It gives you a better understanding about how to approach a problem...-->
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist4.jpg"><p>yash MJ </p>
+				<h6>Python</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					......................................................................................................................................................................................................................................................................................................................................................................................................                                                                                                                                                                                                                                                       <!--This was my first complete course at coding blocks. I attended the Python course in Winter 2020 and loved it which made me join the full course. Shubham bhaiya and Ayush Bhaiya(TA) have good knowledge about the field and were very helpful in making us understand the concepts. I would certainly recommend this to anyone...-->
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div> 
+
+
+
+
+
+</body>
+</html>
